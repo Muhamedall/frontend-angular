@@ -1,0 +1,43 @@
+<header class="bg-white dark:bg-neutral-900 shadow-sm sticky top-0 z-50">
+  <nav class="max-w-7xl mx-auto flex flex-wrap items-center justify-between px-6 py-3">
+    <!-- Logo -->
+    <a href="#" class="flex items-center gap-2 text-xl font-semibold text-emerald-700 dark:text-emerald-400">
+      <img src="../assets/logo-medina-finder.png" alt="Logo" class="w-15 h-auto" />
+      <span>Medina Finder</span>
+    </a>
+
+    <!-- Mobile Menu Button -->
+    <button
+      class="sm:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg border border-emerald-200 text-emerald-700 hover:bg-emerald-50 dark:text-emerald-300 dark:border-emerald-600 dark:hover:bg-emerald-800 transition"
+      type="button"
+      data-hs-collapse="#navbar-menu"
+      aria-controls="navbar-menu"
+      aria-expanded="false"
+    >
+      <svg class="w-5 h-5 hs-collapse-open:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+      <svg class="w-5 h-5 hidden hs-collapse-open:block" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
+
+    <!-- Menu -->
+    <div id="navbar-menu" class="hidden sm:flex flex-col sm:flex-row sm:items-center gap-6 mt-4 sm:mt-0 transition-all duration-300 hs-collapse">
+      <a href="#" class="text-emerald-700 font-medium hover:text-emerald-500 dark:text-emerald-300 dark:hover:text-emerald-400 transition">Home</a>
+      <a href="#" class="text-gray-700 hover:text-emerald-600 dark:text-neutral-300 dark:hover:text-emerald-400 transition">Services</a>
+      <a href="#" class="text-gray-700 hover:text-emerald-600 dark:text-neutral-300 dark:hover:text-emerald-400 transition">About</a>
+      <a href="#" class="text-gray-700 hover:text-emerald-600 dark:text-neutral-300 dark:hover:text-emerald-400 transition">Contact</a>
+
+      <!-- Buttons -->
+      <div class="flex items-center gap-3 mt-3 sm:mt-0">
+        <a href="#login" class="px-4 py-2 text-sm font-semibold border border-emerald-400 text-emerald-700 rounded-full hover:bg-emerald-50 dark:border-emerald-500 dark:text-emerald-300 dark:hover:bg-emerald-800 transition">
+          Login
+        </a>
+        <a href="#register" class="px-4 py-2 text-sm font-semibold text-white bg-emerald-600 hover:bg-emerald-700 rounded-full shadow-sm transition">
+          Register
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>

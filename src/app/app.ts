@@ -1,11 +1,13 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { Home } from './pages/home/home';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  standalone: true,                    
+  imports: [CommonModule, Home],                
+  template: `<app-home></app-home>`, 
+  styleUrls: ['./app.css']             
 })
 export class App {
   protected readonly title = signal('medina-finder');
